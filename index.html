@@ -4,53 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101010">
-
-  <meta name="description" content="JP BURGER. Hamburguesas, sabores únicos y momentos para disfrutar en Espinal, Tolima.">
-
-  <title>JP BURGER | Nuestra historia y sabor</title>
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="JP BURGER: hamburguesas, sabores únicos y momentos especiales en Espinal, Tolima.">
+  <title>JP BURGER | Sabor que se disfruta</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- ENCABEZADO -->
-  <header>
+  <!-- BARRA SUPERIOR -->
+  <div class="topbar">
+    <span>JP BURGER · ESPINAL, TOLIMA</span>
+    <span>VIERNES A DOMINGO Y FESTIVOS · 6:30 P. M. – 11:30 P. M.</span>
+  </div>
 
-    <a class="brand" href="#">
-      <span class="logo">JP</span>
-
-      <span>
+  <!-- NAVEGACIÓN -->
+  <header class="header">
+    <a class="brand" href="#inicio">
+      <span class="brand-logo">JP</span>
+      <span class="brand-name">
         JP BURGER
         <small>BURGERS & MORE</small>
       </span>
     </a>
 
-    <a class="nav-button"
+    <nav class="navigation">
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#pagos">Medios de pago</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="header-button"
        href="https://villadaa437-cmyk.github.io/jp-burger-pos/"
        target="_blank"
        rel="noopener noreferrer">
-      HACER PEDIDO ↗
+      HACER PEDIDO <span>↗</span>
     </a>
-
   </header>
-
 
   <main>
 
-    <!-- PORTADA PRINCIPAL -->
-    <section class="hero">
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
 
-      <div class="content">
+      <div class="hero-background"></div>
+
+      <div class="hero-content">
 
         <span class="eyebrow">
-          BIENVENIDOS A JP BURGER
+          <i></i> BIENVENIDOS A JP BURGER
         </span>
 
         <h1>
@@ -58,80 +66,99 @@
           TIENE <em>NOMBRE.</em>
         </h1>
 
-        <p>
-          Hamburguesas irresistibles, sabores únicos y momentos
-          que merecen disfrutarse. Descubre una experiencia
-          llena de sabor en JP BURGER.
+        <p class="hero-description">
+          Hamburguesas irresistibles, combinaciones llenas de sabor
+          y momentos que merecen disfrutarse.
+          Bienvenido a una experiencia diferente.
         </p>
 
-        <div class="buttons">
+        <div class="hero-actions">
 
-          <a class="primary"
+          <a class="button-primary"
              href="https://villadaa437-cmyk.github.io/jp-burger-pos/"
              target="_blank"
              rel="noopener noreferrer">
             EXPLORAR MENÚ <span>↗</span>
           </a>
 
-          <a class="secondary"
-             href="https://wa.me/573103114145"
-             target="_blank"
-             rel="noopener noreferrer">
-            CONTÁCTANOS
+          <a class="button-secondary" href="#historia">
+            CONÓCENOS
           </a>
 
         </div>
 
-        <div class="rating">
-          ★★★★★
-          <span>PREPARADO CON PASIÓN</span>
+        <div class="hero-rating">
+          <span>★★★★★</span>
+          <small>HECHO CON PASIÓN Y DEDICACIÓN</small>
         </div>
 
       </div>
 
+      <div class="hero-image-container">
 
-      <div class="burger-image">
+        <div class="image-circle"></div>
 
         <img
-          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85"
-          alt="Hamburguesa gourmet JP Burger">
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=85"
+          alt="Hamburguesa gourmet">
 
-        <div class="stamp">
-          JP
+        <div class="round-stamp">
+          <strong>JP</strong>
           <small>BURGER</small>
         </div>
 
+        <div class="image-caption">
+          SABOR QUE<br>ENAMORA.
+        </div>
+
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 — JP BURGER</span>
+        <span>ESPINAL · TOLIMA</span>
+        <a href="#historia">DESCUBRIR MÁS ↓</a>
       </div>
 
     </section>
 
+    <!-- FRASE DE MARCA -->
+    <section class="brand-message">
+      <span>BUEN SABOR</span>
+      <b>✳</b>
+      <span>BUENOS MOMENTOS</span>
+      <b>✳</b>
+      <span>EXPERIENCIAS ÚNICAS</span>
+      <b>✳</b>
+      <span>JP BURGER</span>
+    </section>
 
     <!-- NUESTRA HISTORIA -->
-    <section class="about" id="nuestra-historia">
+    <section class="history section-padding" id="historia">
 
       <div class="history-image">
-
         <img
-          src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1000&q=85"
-          alt="Hamburguesa artesanal de JP Burger">
+          src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1100&q=85"
+          alt="Hamburguesa artesanal">
 
-        <span class="history-label">
-          HECHO CON PASIÓN
-        </span>
-
+        <div class="history-image-label">
+          <span>JP BURGER</span>
+          <small>UNA HISTORIA CON SABOR</small>
+        </div>
       </div>
-
 
       <div class="history-content">
 
-        <span class="eyebrow">
-          MÁS QUE UN RESTAURANTE
+        <span class="eyebrow dark">
+          <i></i> MÁS QUE UN RESTAURANTE
         </span>
 
         <h2>
           NUESTRA<br>
-          HISTORIA.
+          <em>HISTORIA.</em>
         </h2>
+
+        <div class="gold-line"></div>
 
         <p>
           JP BURGER nació de una idea: crear un lugar donde
@@ -139,98 +166,241 @@
         </p>
 
         <p>
-          Lo que nos inspira es la pasión por la comida,
-          el deseo de innovar y las ganas de compartir sabores
-          que hagan sonreír a nuestros clientes.
+          Nos inspira la pasión por la comida, el deseo de
+          innovar y las ganas de compartir sabores que hagan
+          sonreír a nuestros clientes.
         </p>
 
         <p>
-          Cada hamburguesa, cada preparación y cada pedido
-          representan nuestro compromiso con ofrecerte
-          calidad, dedicación y una experiencia llena de sabor.
+          Cada preparación representa nuestro compromiso
+          con la calidad, la dedicación y la satisfacción
+          de quienes nos eligen.
         </p>
 
         <p>
-          Somos JP BURGER y queremos que cada visita sea
+          Somos JP BURGER y queremos que cada pedido sea
           una razón más para volver.
         </p>
 
-        <div class="history-signature">
+        <div class="signature">
           JP BURGER
-          <small>UNA HISTORIA CON SABOR.</small>
+          <small>EL SABOR NOS UNE.</small>
         </div>
 
-        <a class="primary"
+        <a class="button-primary"
            href="https://villadaa437-cmyk.github.io/jp-burger-pos/"
            target="_blank"
            rel="noopener noreferrer">
-          DESCUBRE NUESTRO MENÚ ↗
+          CONOCE NUESTRO MENÚ ↗
         </a>
 
       </div>
 
     </section>
 
+    <!-- DIFERENCIAL -->
+    <section class="experience">
 
-    <!-- INVITACIÓN AL MENÚ -->
-    <section class="contact">
+      <div class="experience-heading">
+        <span class="eyebrow"><i></i> NUESTRA ESENCIA</span>
+        <h2>LO HACEMOS CON <em>PASIÓN.</em></h2>
+      </div>
 
-      <span class="eyebrow">
-        TU PRÓXIMO ANTOJO TE ESPERA
-      </span>
+      <div class="experience-grid">
 
-      <h2>
-        ¿SE TE ANTOJÓ?
-      </h2>
+        <article class="experience-card">
+          <span class="experience-icon">✦</span>
+          <h3>Calidad</h3>
+          <p>Cuidamos cada preparación para ofrecerte una experiencia deliciosa.</p>
+        </article>
 
-      <p>
-        Descubre nuestro menú, encuentra tu favorito
-        y disfruta del auténtico sabor de JP BURGER.
+        <article class="experience-card">
+          <span class="experience-icon">♨</span>
+          <h3>Preparación</h3>
+          <p>Trabajamos para que cada pedido sea preparado con dedicación.</p>
+        </article>
+
+        <article class="experience-card">
+          <span class="experience-icon">♥</span>
+          <h3>Experiencia</h3>
+          <p>Queremos acompañar tus mejores momentos con mucho sabor.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- MEDIOS DE PAGO -->
+    <section class="payments section-padding" id="pagos">
+
+      <div class="payments-heading">
+
+        <span class="eyebrow">
+          <i></i> FÁCIL, RÁPIDO Y CÓMODO
+        </span>
+
+        <h2>NUESTROS <em>MEDIOS DE PAGO.</em></h2>
+
+        <p>
+          Elige la alternativa que más te convenga
+          para pagar tu pedido en JP BURGER.
+        </p>
+
+      </div>
+
+      <div class="payment-grid">
+
+        <!-- NEQUI -->
+        <article class="payment-card">
+          <div class="payment-logo nequi-logo">N</div>
+          <span class="payment-category">PAGO DIGITAL</span>
+          <h3>Nequi</h3>
+          <p>
+            Realiza tu pago de manera sencilla
+            utilizando Nequi.
+          </p>
+          <span class="payment-available">
+            <i></i> MEDIO DISPONIBLE
+          </span>
+        </article>
+
+        <!-- BRE-B -->
+        <article class="payment-card">
+          <div class="payment-logo bre-logo">B</div>
+          <span class="payment-category">TRANSFERENCIA</span>
+          <h3>Llave Bre-B</h3>
+          <p>
+            Transfiere tu dinero utilizando
+            nuestra llave de pago.
+          </p>
+          <span class="payment-available">
+            <i></i> MEDIO DISPONIBLE
+          </span>
+        </article>
+
+        <!-- EFECTIVO -->
+        <article class="payment-card">
+          <div class="payment-logo cash-logo">$</div>
+          <span class="payment-category">PAGO TRADICIONAL</span>
+          <h3>Efectivo</h3>
+          <p>
+            Paga en efectivo al recibir
+            o recoger tu pedido.
+          </p>
+          <span class="payment-available">
+            <i></i> MEDIO DISPONIBLE
+          </span>
+        </article>
+
+      </div>
+
+      <div class="payment-bottom">
+        <p>¿Tienes dudas sobre cómo pagar?</p>
+        <a href="https://wa.me/573103114145"
+           target="_blank"
+           rel="noopener noreferrer">
+          CONSULTAR POR WHATSAPP ↗
+        </a>
+      </div>
+
+      <p class="payment-disclaimer">
+        Los medios de pago disponibles se confirman al momento de realizar el pedido.
       </p>
 
-      <a class="primary"
-         href="https://villadaa437-cmyk.github.io/jp-burger-pos/"
-         target="_blank"
-         rel="noopener noreferrer">
-        HACER MI PEDIDO ↗
-      </a>
+    </section>
 
-      <p class="details">
+    <!-- LLAMADO A LA ACCIÓN -->
+    <section class="order-banner">
 
-        <strong>ENCUÉNTRANOS</strong><br>
+      <div class="order-banner-content">
+        <span class="eyebrow"><i></i> TU PRÓXIMO ANTOJO TE ESPERA</span>
 
-        Barrio Los Prados, segunda etapa,<br>
-        Manzana B, Casa 16.<br>
-        Espinal, Tolima.<br><br>
+        <h2>¿SE TE <em>ANTOJÓ?</em></h2>
 
-        <strong>HORARIO DE ATENCIÓN</strong><br>
+        <p>
+          Descubre nuestro menú y encuentra
+          ese sabor que estabas buscando.
+        </p>
 
-        Viernes a domingo y festivos<br>
-        6:30 p. m. – 11:30 p. m.<br><br>
+        <a class="button-primary"
+           href="https://villadaa437-cmyk.github.io/jp-burger-pos/"
+           target="_blank"
+           rel="noopener noreferrer">
+          HACER MI PEDIDO ↗
+        </a>
+      </div>
 
-        <strong>WHATSAPP</strong><br>
+    </section>
 
-        310 311 4145
+    <!-- CONTACTO -->
+    <section class="contact section-padding" id="contacto">
 
-      </p>
+      <div class="contact-heading">
+        <span class="eyebrow"><i></i> ESTAMOS PARA ATENDERTE</span>
+        <h2>ENCUÉNTRANOS <em>AQUÍ.</em></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <article class="contact-card">
+          <span class="contact-icon">⌖</span>
+          <h3>Ubicación</h3>
+          <p>
+            Barrio Los Prados, segunda etapa,
+            Manzana B, Casa 16.
+            Espinal, Tolima.
+          </p>
+        </article>
+
+        <article class="contact-card">
+          <span class="contact-icon">◷</span>
+          <h3>Horario</h3>
+          <p>
+            Viernes a domingo y festivos.<br>
+            6:30 p. m. – 11:30 p. m.
+          </p>
+        </article>
+
+        <article class="contact-card">
+          <span class="contact-icon">☎</span>
+          <h3>WhatsApp</h3>
+          <p>
+            310 311 4145
+          </p>
+          <a href="https://wa.me/573103114145"
+             target="_blank"
+             rel="noopener noreferrer">
+            ESCRÍBENOS ↗
+          </a>
+        </article>
+
+      </div>
 
     </section>
 
   </main>
 
-
   <!-- PIE DE PÁGINA -->
-  <footer>
+  <footer class="footer">
 
-    <div class="footer-brand">
-      JP BURGER
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-logo">JP</span>
+      <span class="brand-name">
+        JP BURGER
+        <small>BURGERS & MORE</small>
+      </span>
+    </a>
+
+    <p>CALIDAD, SABOR Y MOMENTOS ESPECIALES.</p>
+
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#pagos">Medios de pago</a>
+      <a href="#contacto">Contacto</a>
     </div>
 
-    <p>
-      SABOR, CALIDAD Y MOMENTOS ESPECIALES.
-    </p>
-
-    <p>
+    <p class="copyright">
       © 2026 JP BURGER · TODOS LOS DERECHOS RESERVADOS.
     </p>
 
@@ -238,4 +408,3 @@
 
 </body>
 </html>
-
