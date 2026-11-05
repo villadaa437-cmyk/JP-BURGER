@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Pide tus favoritos en JP Burger. Hamburguesas, perros, salchipapas y mucho más.">
+  <title>JP BURGER | Sabor que se disfruta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">VIERNES A DOMINGO Y FESTIVOS <span>·</span> 6:30 P. M. — 11:30 P. M.</div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="JP Burger inicio"><span class="brand-mark">JP</span><span><b>JP BURGER</b><small>BURGERS & MORE</small></span></a>
+    <nav class="desktop-nav"><a href="#menu">Menú</a><a href="#historia">Nuestra esencia</a><a href="#visitanos">Visítanos</a></nav>
+    <button class="header-cart" id="openCart">TU PEDIDO <span id="headerCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> HECHO PARA DISFRUTAR</div>
+        <h1>EL ANTOJO<br>TIENE <em>NOMBRE.</em></h1>
+        <p>Hamburguesas irresistibles, combinaciones llenas de sabor y ese toque JP que siempre provoca volver.</p>
+        <a class="gold-button" href="#menu">EXPLORAR MENÚ <span>↗</span></a>
+        <div class="hero-note"><span>★ ★ ★ ★ ★</span> PREPARADO AL MOMENTO</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orbit"></div>
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85" alt="Hamburguesa gourmet con queso y vegetales">
+        <div class="hero-stamp">JP<br><small>BURGER</small></div>
+        <div class="hero-caption">SABOR SIN<br>COMPROMISOS.</div>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span>ESPINAL · TOLIMA</span><span>SCROLL PARA DESCUBRIR ↓</span></div>
+    </section>
+
+    <section class="ticker"><div>BUEN SABOR <b>✳</b> BUENOS MOMENTOS <b>✳</b> HECHO CON ACTITUD <b>✳</b> JP BURGER <b>✳</b> BUEN SABOR <b>✳</b></div></section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <div><div class="eyebrow dark"><i></i> DESCUBRE TU FAVORITO</div><h2>EL MENÚ <em>JP.</em></h2></div>
+        <p>Elige, combina y disfruta.<br>Nosotros nos encargamos del sabor.</p>
+      </div>
+      <div class="menu-tools"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="¿Qué se te antoja hoy?"></label><div id="categories" class="categories"></div></div>
+      <div id="products" class="products"></div>
+    </section>
+
+    <section class="story" id="historia">
+      <div class="story-photo"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1000&q=85" alt="Hamburguesa artesanal recién preparada"><span>DESDE JP, CON SABOR.</span></div>
+      <div class="story-copy"><div class="eyebrow"><i></i> NUESTRA ESENCIA</div><h2>NO ES SOLO<br>UNA BURGER.<br><em>ES EL PLAN.</em></h2><p>En JP Burger creemos que los mejores momentos se disfrutan alrededor de algo delicioso. Por eso preparamos cada pedido con dedicación, ingredientes llenos de sabor y muchas ganas de sorprenderte.</p><a href="#menu" class="text-link">ENCUENTRA TU FAVORITO ↗</a></div>
+    </section>
+
+    <section class="visit section-wrap" id="visitanos"><div><div class="eyebrow dark"><i></i> TE ESPERAMOS</div><h2>EL SABOR TE<br>QUEDA <em>CERCA.</em></h2></div><div class="visit-details"><p><b>HORARIO</b><br>Viernes a domingo y festivos<br>6:30 p. m. – 11:30 p. m.</p><p><b>ENCUÉNTRANOS</b><br>Barrio Los Prados, segunda etapa,<br>Manzana B, Casa 16 · Espinal, Tolima</p><a class="gold-button" href="https://wa.me/573103114145" target="_blank" rel="noopener">HABLEMOS POR WHATSAPP ↗</a></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">JP</span><span><b>JP BURGER</b><small>BURGERS & MORE</small></span></a><span>CALIDAD Y SABOR QUE TE HACEN VOLVER.</span><span>© JP BURGER</span></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Tu pedido" aria-hidden="true">
+    <div class="drawer-head"><div><div class="eyebrow dark"><i></i> CASI LISTO</div><h2>Tu pedido</h2></div><button id="closeCart" class="icon-button" aria-label="Cerrar">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty">Tu carrito está esperando algo delicioso.</div></div>
+    <div class="checkout">
+      <div class="checkout-fields">
+        <label>Tu nombre<input id="customer" placeholder="¿Cómo te llamas?"></label>
+        <label>Celular<input id="phone" inputmode="tel" placeholder="Número de contacto"></label>
+        <label>¿Cómo lo quieres?<select id="orderType"><option value="Domicilio">Domicilio</option><option value="Recoger en el local">Recoger en el local</option></select></label>
+        <label id="addressField">Dirección y barrio<input id="address" placeholder="Dirección de entrega"></label>
+        <label>Forma de pago<select id="payment"><option>Efectivo</option><option>Nequi</option><option>Llave Bre-B</option></select></label>
+        <label>Notas para cocina<textarea id="notes" rows="2" placeholder="Ej. Sin cebolla, salsas aparte..."></textarea></label>
+      </div>
+      <div class="subtotal"><span>Total del pedido</span><b id="total">$0</b></div>
+      <button class="gold-button checkout-button" id="checkoutButton">CONFIRMAR PEDIDO ↗</button>
+      <p class="checkout-note">Al continuar, enviaremos tu pedido para confirmación por WhatsApp.</p>
+    </div>
+  </aside>
+  <script src="products.js"></script><script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
