@@ -1,51 +1,4 @@
-```css
-/* =========================================================
-   JP BURGER — PREMIUM CINEMATIC DESIGN
-   Negro profundo · Dorado · Luces · Animaciones
-========================================================= */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800;900&display=swap');
-
-:root {
-    --black: #080808;
-    --black-2: #101010;
-    --black-3: #181818;
-    --gold: #d6a84b;
-    --gold-light: #f6d98a;
-    --gold-dark: #8c6422;
-    --cream: #f5f0e7;
-    --white: #ffffff;
-    --gray: #aaa49a;
-    --border: rgba(214, 168, 75, .2);
-    --gold-glow: 0 0 30px rgba(214, 168, 75, .2);
-    --transition: .4s cubic-bezier(.2,.8,.2,1);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-}
-
-body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--black);
-    color: var(--cream);
-    overflow-x: hidden;
-    line-height: 1.7;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
+ pointer-events: none;
     background:
         radial-gradient(ellipse at 15% 15%, rgba(214,168,75,.09), transparent 38%),
         radial-gradient(ellipse at 85% 55%, rgba(214,168,75,.055), transparent 35%),
@@ -1265,3 +1218,101 @@ img {
     }
 }
 ```
+
+
+/* =========================================================
+   JP BURGER — PALETA DE TEXTO MEJORADA
+   Blanco cálido · Marfil · Dorado
+   Mantiene el diseño, las imágenes y las animaciones originales.
+========================================================= */
+
+:root {
+    --cream: #F7F4ED;
+    --white: #FFFFFF;
+    --gray: #D8D2C7;
+}
+
+/* Texto general */
+body {
+    color: #F7F4ED;
+}
+
+/* Navegación y enlaces principales */
+.navigation a,
+.footer-links a {
+    color: #F0EEE9;
+}
+
+/* Descripciones y párrafos */
+.hero-description,
+.history-content p,
+.experience-heading p,
+.payments-heading p,
+.contact-heading p,
+.experience-card p,
+.payment-bottom,
+.contact-card p,
+.contact-card a,
+.order-banner p {
+    color: #E6E2DA;
+}
+
+/* Textos secundarios */
+.hero-rating,
+.payment-category,
+.payment-disclaimer,
+.copyright {
+    color: #CFC9BE;
+}
+
+/* Títulos principales */
+.hero h1,
+.history-content h2,
+.experience-heading h2,
+.payments-heading h2,
+.contact-heading h2 {
+    color: #FFFFFF;
+}
+
+/* Acentos dorados de la marca */
+.brand-name,
+.eyebrow,
+.signature,
+.experience-card h3,
+.payment-card h3,
+.contact-card h3,
+.order-banner h2,
+.footer-brand,
+.image-caption,
+.history-image-label {
+    color: #F6D98A;
+}
+
+/* Estados hover */
+.navigation a:hover,
+.contact-card a:hover,
+.footer-links a:hover {
+    color: #F6D98A;
+}
+
+/* Contraste en elementos dorados */
+.topbar,
+.header-button,
+.button-primary {
+    color: #171208;
+}
+
+.button-secondary {
+    color: #F6D98A;
+}
+
+/* Disponibilidad */
+.payment-available {
+    color: #9BE0AD;
+}
+
+/* Selección de texto */
+::selection {
+    background: #D6A84B;
+    color: #080808;
+}
